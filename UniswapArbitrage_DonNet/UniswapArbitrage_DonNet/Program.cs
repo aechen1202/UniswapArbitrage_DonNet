@@ -71,7 +71,7 @@ namespace UniswapArbitrage_DonNet
                         List<string> path = new List<string>();
                         path.Add("0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174");
                         path.Add("0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619");
-                        double AmountOutMin = (1 / price_sushiswap_weth) * fund * 1000000000000000000 * (1 - sushiswap_fee) * 0.9999;
+                        double AmountOutMin = (1 / price_sushiswap_weth) * fund * 1000000000000000000 * (1 - sushiswap_fee);
                         var sushiswapParams = new swapExactTokensForTokensSupportingFeeOnTransferTokensFunction
                         {
                             AmountIn = new BigInteger(1000000 * fund),
