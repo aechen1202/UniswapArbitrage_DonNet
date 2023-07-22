@@ -13,7 +13,7 @@ namespace UniswapArbitrage_DonNet
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PairWethUsdc().Wait();
         }
 
         static async Task PairWethUsdc()
